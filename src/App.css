@@ -1,0 +1,24 @@
+.button {
+    background-color: #0E3965;
+    color: #ffffff;
+    width: 100px;
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 3px 3px 5px rgb(0 0 0 / 30%);
+} 
+.button-white {
+    background-color: #ffffff;
+    color: #252731;
+    width: 150px;
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 3px 3px 5px rgb(0 0 0 / 30%);
+    margin-left: 10px;
+    
+}
+.border {
+    height:80px;
+    background-color: #0E3965;
+}
