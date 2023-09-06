@@ -1,5 +1,5 @@
 .features {
-    margin: 80px 60px 100px 90px;
+    margin: 80px 5vw;
 }
 .left-column {
     width: 50%;
@@ -114,5 +114,11 @@
     }
     .column-subtext {
         max-width: none;
+    }
+}
+
+@media ( min-width: 1250px) {
+    .features {
+        margin: 80px 20vw;
     }
 }

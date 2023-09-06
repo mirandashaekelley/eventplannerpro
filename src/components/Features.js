@@ -3,6 +3,8 @@ import React from 'react';
 import{ useState } from 'react';
 import arrowicon from '../assets/Arrow.svg'
 import features1 from '../assets/features1.png'
+import features2 from '../assets/features2.png'
+import features3 from '../assets/features3.png'
 export default function Features () {
     const [openColumn, setOpenColumn] = useState(1);
 
@@ -32,7 +34,7 @@ export default function Features () {
             </div>
             <div className="row-reverse">
                 <div className='left-img'>
-                    <img src={features1} alt="graphic"/>
+                    <img src={features1} alt="streamline event coordination"/>
                 </div>
                 <div className="text-column">
                     <div className="column-title">Streamline Event Coordination</div>
@@ -46,13 +48,13 @@ export default function Features () {
                     <div className="column-subtext">Link experience throughout your event lineup to enable widespread personalization.</div>
                 </div>
                 <div className='left-img'>
-                <img src={features1} alt="graphic"/>
+                <img src={features2} alt="integrate event inititatives"/>
                 </div>
                
             </div>
             <div className="row-reverse">
                 <div className='left-img'>
-                    <img src={features1} alt="graphic"/>
+                    <img src={features3} alt="enhance cross channel"/>
                 </div>
                 <div className="text-column">
                     <div className="column-title">Enhance Cross-Channel Promotion</div>

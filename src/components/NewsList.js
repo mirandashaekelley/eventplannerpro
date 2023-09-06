@@ -18,7 +18,7 @@ const NewsList = () => {
   const { loading, error, data } = useQuery(NEWS_QUERY);
 
   if (loading) return <p>Loading...</p>;
-  if (error) return <p>Error: {error.message}</p>;
+  if (error) return <p>Error: {error.message} Hint: Refer to the README file</p>;
 
   const newsItems = data.newsQuery;
 
