@@ -1,0 +1,35 @@
+.news {
+    margin: 0px 60px 100px 90px;
+}
+.section-header {
+    font-size: 30px;
+    color: #0E3965;
+    font-weight: bold;
+}
+.news-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.news-block {
+    flex: 1;
+    margin: 10px 10px 0px 0px;
+    max-width: 400px;
+}
+.category {
+    color: #175e54;
+    font: 24px;
+}
+h2 {
+    font-size: 20px;
+}
+
+@media (max-width: 768px) {
+    .news-section {
+        display: flex;
+        flex-direction: column;
+    }
+    .news-block {
+        max-width: none;
+    }
+}
