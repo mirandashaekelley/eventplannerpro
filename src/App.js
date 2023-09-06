@@ -3,6 +3,7 @@ import './App.css';
 import Navigation from './components/Navigation';
 import Hero from './components/Hero';
 import Features from './components/Features';
+import NewsList from './components/NewsList';
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <Hero/>
       <div className='border'></div>
       <Features/>
+      <NewsList/>
     </div>
   );
 }

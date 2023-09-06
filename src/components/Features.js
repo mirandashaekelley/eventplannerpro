@@ -1,11 +1,13 @@
 import '../styling/Features.css'
 import React from 'react';
 import{ useState } from 'react';
+import arrowicon from '../assets/Arrow.svg'
+import features1 from '../assets/features1.png'
 export default function Features () {
     const [openColumn, setOpenColumn] = useState(1);
 
     const handleToggle = (column) => {
-        setOpenColumn((prevOpenColumn) => (prevOpenColumn === column ? null : column));
+        setOpenColumn((prevOpenColumn) => (prevOpenColumn === column ? prevOpenColumn : column));
     }
     return (
         <div className="features">
@@ -28,16 +30,35 @@ export default function Features () {
                     </div>
                 </div>
             </div>
-            <div className="row">
-                <div className='left-img'>placeholder</div>
-                <div className="right-column">
+            <div className="row-reverse">
+                <div className='left-img'>
+                    <img src={features1} alt="graphic"/>
+                </div>
+                <div className="text-column">
                     <div className="column-title">Streamline Event Coordination</div>
                     <div className="column-subtext">Bring your distinct event vision
                     to life while minimizing effort and optimizing your operations.</div>
                 </div>
             </div>
-            <div className="row"></div>
-            <div className="row"></div>
+            <div className="row"> 
+                <div className="left-text-column">
+                    <div className="column-title">Integrate Event Initiatives</div>
+                    <div className="column-subtext">Link experience throughout your event lineup to enable widespread personalization.</div>
+                </div>
+                <div className='left-img'>
+                <img src={features1} alt="graphic"/>
+                </div>
+               
+            </div>
+            <div className="row-reverse">
+                <div className='left-img'>
+                    <img src={features1} alt="graphic"/>
+                </div>
+                <div className="text-column">
+                    <div className="column-title">Enhance Cross-Channel Promotion</div>
+                    <div className="column-subtext">Elevate campaign effectiveness and accelerate event-driven demand with precision.</div>
+                </div>
+            </div>
         </div>
     );
 }
@@ -45,11 +66,11 @@ export default function Features () {
 function Column ({title, isOpen, onToggle, content}) {
     return (
         <div className='column'>
-            <div className='dropdown-title'>
+            <div className='dropdown-title' onClick={onToggle}>
                 {title}
-                <button className='toggle-btn' onClick={onToggle}>
-                Toggle
-                </button>
+                <div className='toggle-btn'>
+                <img src={arrowicon} alt='white icon arrow'></img>
+                </div>
             </div>
             
             {isOpen && <div className='column-content'>{content}</div>}
