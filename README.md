@@ -1,41 +1,41 @@
 Prerequisites
-Before you begin, make sure you have the following prerequisites installed on your system:
+Before starting, ensure you have the following installed on your system:
 
-1. Node.js: You can download and install Node.js from the official website: https://nodejs.org/
+Node.js: Download and install from the official website.
+Dependencies: Run npm i to install the necessary dependencies.
+Clone the Project Repository (Optional)
+To clone the project, use the following command:
 
-2. Run npm i for dependencies
-
-
-Deployment Steps (2 options)
-Once you have the prerequisites in place, follow these steps:
-
-1. 
-Clone the project repository:
-Optional -
 bash
 Copy code
 git clone https://github.com/mirandashaekelley/eventplannerpro
-Navigate to the project directory:
-bash
-cd eventplanner-pro
-Run the deployment script by executing the following command in your terminal: npm start
-OR
-2. 
-You can access the website by opening your web browser and visiting:
+Navigate to the Project Directory
+Change into the project directory:
 
-https://eventplanner-pro.web.app/
----------------------------------------------------------------------------------------------
-This part is necessary no matter now you view the website 
+bash
+Copy code
+cd eventplanner-pro
+Run the Deployment Script
+Execute the deployment script with:
+
+bash
+Copy code
+npm start
+Access the Website
+Alternatively, you can access the website directly by visiting:
+
+Event Planner Pro
+
+Important Step
+Regardless of how you view the website, you need to run the deployment script for the dynamic news section:
+
 bash
 Copy code
 ./script.sh
-This script will handle the deployment of the dynamic news section.
-
-
 Troubleshooting
-If you encounter any issues during the deployment process, please check the following:
+If you encounter issues during deployment, check the following:
 
-Ensure that you have the required prerequisites installed correctly.
-Double-check that you are in the project directory before running the deployment script.
-Make sure you have the necessary permissions and access to deploy to Firebase.
-If you need further assistance or encounter any errors, please refer to the project documentation or contact me!
+Ensure you have the required prerequisites installed correctly.
+Confirm you are in the project directory before running the deployment script.
+Verify you have the necessary permissions and access to deploy to Firebase.
+For further assistance or if you encounter any errors, refer to the project documentation or contact me!
